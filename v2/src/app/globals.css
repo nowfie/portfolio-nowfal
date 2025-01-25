@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  /* background-color: #000; */
+}
+
+p,ul,li{
+  font-weight:300;
+}
+
+@layer components {
+  .main {
+    @apply w-11/12 lg:w-10/12 xl:w-[80%] mx-auto transition-all duration-300 text-heading-default;
+  }
+  .text-heading{
+    @apply text-[42px]  xl:text-[56px] leading-tight xl:leading-sm
+  }
+  .gradient-text {
+    @apply bg-gradient-text bg-clip-text text-transparent;
+  }
+  .blur-box {
+    @apply backdrop-blur-40 bg-blur;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+  }
+}
+
+
+body::-webkit-scrollbar {
+  width: 5px; /* Increased width for better visibility */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #CD512F;
+  border-radius: 10px;
+  border: 3px solid #CD512F;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrollable {
+  display: flex;
+  animation: marquee 15s linear infinite;
+  will-change: transform;
+}
+
+.scrollable h1 {
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+
+
+/* Custom Scrollbar Styles */
+.skill-scrolls {
+  overflow-y: auto;
+}
+
+.skill-scrolls::-webkit-scrollbar {
+  width: 5px; /* Increased width for better visibility */
+}
+
+.skill-scrolls::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.skill-scrolls::-webkit-scrollbar-thumb {
+  background-color: #CD512F;
+  border-radius: 10px;
+  border: 3px solid #CD512F;
+}
+
+.skill-scrolls::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.text-stroke-primary {
+  font-weight: bold;
+  color: transparent;
+  color: #CD512F;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-stroke-secondary {
+  font-weight: bold;
+  color: transparent;
+  color: #000;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-stroke-invert {
+  font-weight: bold;
+  color: transparent;
+  color: #fff;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-stroke-gray {
+  font-weight: bold;
+  color: transparent;
+  color: #f5f5f5;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-fill-color: transparent;
+}
