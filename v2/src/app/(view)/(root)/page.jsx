@@ -18,7 +18,7 @@ const page = () => {
         <RecordSection/>
         {/* <ProfileSection/> */}
         <ServiceSection/>
-        <SkillSection/>
+        {/* <SkillSection/> */}
         <ProjectSection/>
         <ClientSection/>
         <BlogSection/>

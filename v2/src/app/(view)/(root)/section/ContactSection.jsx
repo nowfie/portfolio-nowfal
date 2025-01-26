@@ -1,3 +1,4 @@
+import PrimaryScroll from '@/animations/PrimaryScroll'
 import React from 'react'
 
 const ContactSection = () => {
@@ -5,11 +6,13 @@ const ContactSection = () => {
     <section className=' overflow-x-hidden py-12 lg:py-16 '>
         <div className="main flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="lg:w-1/2 flex flex-col gap-9">
+                <PrimaryScroll className={'space-y-9'}>
                 <h5 className=' flex items-center text-xs font-semibold gap-2 text-paragraph-default uppercase tracking-widest '>contact</h5>
                 <h1 className=' uppercase font-heading text-heading'> let's <span className=' text-primary-default font-heading'>make</span> <br /> an <span className=' text-primary-default font-heading'>imapact</span><br /> together.</h1>
-                <div className="border-l-[4px] border-primary-default pl-5">
+                </PrimaryScroll>
+                <PrimaryScroll className="border-l-[4px] border-primary-default pl-5">
                     <p className=' text-paragraph-default leading-relaxed text-base lg:w-3/4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempora rem unde excepturi ut nesciunt, doloribus mollitia atque sit vitae.</p>
-                </div>        
+                </PrimaryScroll>        
             </div>
             <div className="lg:w-1/2 space-y-10">
                 <div className=" flex flex-col gap-5">

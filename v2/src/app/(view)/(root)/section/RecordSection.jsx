@@ -1,3 +1,4 @@
+import PrimaryScroll from '@/animations/PrimaryScroll'
 import React from 'react'
 
 const RecordSection = () => {
@@ -26,12 +27,16 @@ const RecordSection = () => {
               const splittedtext = item.text.split(' ')
               return(
                 <div key={index} className="flex flex-col lg:flex-row  items-center gap-3 ">
+                    <PrimaryScroll>
                     <h1 className=' text-8xl lg:text-7xl font-extrabold'>{item.number}</h1>
+                    </PrimaryScroll>
                     <div className="flex flex-col">
                     {splittedtext.map((item,index)=>(
-                      <h2 key={index} className={`font-heading text-2xl uppercase ${index ===1?' text-primary-default':'text-heading-default'} `}>
+                      <PrimaryScroll key={index} delay={.2}>
+                        <h2  className={`font-heading text-2xl uppercase ${index ===1?' text-primary-default':'text-heading-default'} `}>
                         {item}
                       </h2>
+                      </PrimaryScroll>
                     ))}
                     </div>
                 </div>

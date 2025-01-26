@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '@/components/Header'
-import BlogDetail from './section/BlogDetail'
+import BlogDetail from './(section)/BlogDetail'
 import Image from 'next/image'
 import BlogSection from '../../(root)/section/BlogSection'
 

@@ -48,7 +48,7 @@ const Footer = () => {
 
             </div>
         </div>
-        <div className=" h-32 !z-0 absolute bottom-0 left-0 w-full" style={{background:'linear-gradient(to top, rgb(210 210 208 / 0.1) 0%, #000 100%'}}></div>
+        <div className=" h-32 !z-0 absolute bottom-0 left-0 w-full" style={{background:'linear-gradient(to top, rgb(210 210 208 / 0.1) 0%, transparent 100%'}}></div>
     </footer>
   )
 }
