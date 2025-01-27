@@ -70,7 +70,7 @@ const ProjectSection = () => {
             <div className="border-l-[4px] border-primary-default pl-5">
               <p className=' text-paragraph-default leading-relaxed text-base lg:w-3/4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempora rem unde excepturi ut nesciunt, doloribus mollitia atque sit vitae.</p>
             </div>
-            <Link href={'/project'} className=' bg-primary-default rounded-full lg:m-auto text-center w-fit font-semibold uppercase text-xs tracking-widest px-5 py-3'>view all projects</Link>
+            <Link href={'/project'} className=' bg-primary-default rounded-full lg:m-auto text-center w-fit font-semibold uppercase text-xs tracking-widest px-5 py-3 hover:scale-105 duration-300'>view all projects</Link>
         </PrimaryScroll>
       </div>
     </section>
