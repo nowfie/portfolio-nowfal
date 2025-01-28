@@ -10,11 +10,11 @@ const ServiceSection = () => {
         return(
             <div className={` group flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between ${index ==0?' border-t pt-10':''} border-b border-paragraph-default/15 pb-12`}>
                 <div className="lg:w-[80%] space-y-8">
-                    <PrimaryScroll>
+                    <PrimaryScroll delay={index/10}>
                     <h1 className='font-heading text-heading-default text-3xl uppercase leading-normal'> {index+1}. {item.title}</h1>
 
                     </PrimaryScroll>
-                    <PrimaryScroll className="border-l-[4px] border-primary-default pl-8">
+                    <PrimaryScroll delay={index/10} className="border-l-[4px] border-primary-default pl-8">
                         <p className=' text-paragraph-default leading-relaxed text-base lg:w-3/4'>{item.description}</p>
                     </PrimaryScroll>
                 </div>

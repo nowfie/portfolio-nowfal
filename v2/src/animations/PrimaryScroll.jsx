@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion'
 import PropTypes from 'prop-types'
 import React, { useRef } from 'react'
 
-const PrimaryScroll = ({children,className,opacity=0,delay=0,duration=.7,scale=.9}) => {
+const PrimaryScroll = ({children,className,opacity=0,delay=0,duration=.5,scale=.9}) => {
 
     const scrollRef = useRef(null)
     const scrollInView = useInView(scrollRef,{once: false})

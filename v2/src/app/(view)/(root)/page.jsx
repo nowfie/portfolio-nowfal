@@ -4,7 +4,6 @@ import AboutSection from './section/AboutSection'
 import ProjectSection from './section/ProjectSection'
 import RecordSection from './section/RecordSection'
 import SkillSection from './section/SkillSection'
-import ProfileSection from './section/ProfileSection'
 import ServiceSection from './section/ServiceSection'
 import ClientSection from './section/ClientSection'
 import BlogSection from './section/BlogSection'
@@ -16,7 +15,6 @@ const page = () => {
         <HeroSection/>
         <AboutSection/>
         <RecordSection/>
-        {/* <ProfileSection/> */}
         <ServiceSection/>
         {/* <SkillSection/> */}
         <ProjectSection/>

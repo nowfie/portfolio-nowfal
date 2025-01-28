@@ -7,10 +7,9 @@ const layout = ({children}) => {
   return (
     <main className=' bg-background-default relative' >
       <Cursor/>
-        <NavBar/>
-        {children}
-        <Footer/>
-
+      <NavBar/>
+      {children}
+      <Footer/>
     </main>
   )
 }
